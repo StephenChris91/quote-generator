@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-color: #fff;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23414142' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-container{
+    margin: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text{
+    font-size: 2.75rem;
+}
+
+.long-quote{
+    font-size: 2rem;
+}
+
+.fa-quote-left{
+    font-size: 4rem;
+    color: #cc9933
+}
+
+.author-name{
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 400px;
+    font-style: italic;
+}
+
+.button-container{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#new-quote{
+    padding: 10px;
+    background: none;
+    background: #000;
+    border: none;
+    border-radius: 3px;
+    color: #cc9933;
+    font-weight: bold;
+}
+
+#new-quote:hover{
+    padding: 10px;
+    background: none;
+    background: #000;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#tweeter{
+    padding: 10px;
+    color: #cc9933;
+    background: #000;
+    border: none;
+    border-radius: 3px;
+}
+
+#tweeter:hover{
+    padding: 10px;
+    color: #38a1f3;
+    background: #000;
+    border: none;
+    border-radius: 3px;
+}
+
+button{
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:active{
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+
+
+@media screen and (max-width: 1000px){
+    .quote-container{
+        margin: auto 10px;
+    }
+
+    .quote-text{
+        font-size: 2rem;
+    }
+}
