@@ -51,6 +51,7 @@ async function getQuote(){
 
    } catch (error) {
        console.log('no data ', error)
+       getQuote();
    }
 }
 
