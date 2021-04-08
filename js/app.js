@@ -26,7 +26,10 @@ async function getQuote(){
     //    const response = await axios.get(apiUrl);
     //    const data = response.data;
     const response = await fetch(apiUrl, {
-        mode: "cors" 
+        mode: "cors",
+        headers: {
+            'Access-Control-Allow-Origin': '*'
+        }
     });
     const data = await response.json()
           console.log(data);
