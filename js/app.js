@@ -26,7 +26,7 @@ async function getQuote(){
     //    const response = await axios.get(apiUrl);
     //    const data = response.data;
     const response = await fetch(apiUrl, {
-        mode: "no-cors" 
+        mode: "cors" 
     });
     const data = await response.json()
           console.log(data);
