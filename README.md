@@ -1,2 +1,2 @@
-# joke-generator
-This is a Jokes generator app using the joke generator API
+# Quote-generator
+This is a Quotes generator app using the Quote generator API
