@@ -48,8 +48,8 @@ async function getQuote(){
           }else{
               quoteText.classList.remove('long-quote');
           }
-//stop loading and show quote
-
+          
+        //stop loading and show quote
           complete()
 
    } catch (error) {
