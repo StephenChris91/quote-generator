@@ -20,19 +20,14 @@ async function getQuote(){
 
     loading();
 
-    let apiUrl = "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json"
+    let proxy = 'http://cors-anywhere.herokuapp.com/'
+
+    let apiUrl = `${proxy}https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json`
 
    try {
     //    const response = await axios.get(apiUrl);
     //    const data = response.data;
-    const response = await fetch(apiUrl, {
-        method: 'GET',
-        mode: "*cors",
-        credentials: 'same-origin',
-        headers: {
-            'Access-Control-Allow-Origin': '*'
-        }
-    });
+    const response = await fetch(apiUrl);
     const data = await response.json()
           console.log(data);
           if (data.quoteAuthor === ''){
