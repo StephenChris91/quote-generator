@@ -28,7 +28,7 @@ async function getQuote(){
     const response = await fetch(apiUrl, {
         mode: "cors",
         headers: {
-            'Access-Control-Allow-Origin': '*'
+            'Access-Control-Allow-Origin': 'https://api.forismatic.com'
         }
     });
     const data = await response.json()
