@@ -26,7 +26,9 @@ async function getQuote(){
     //    const response = await axios.get(apiUrl);
     //    const data = response.data;
     const response = await fetch(apiUrl, {
-        mode: "no-cors",
+        method: 'GET',
+        mode: "*cors",
+        credentials: 'same-origin',
         headers: {
             'Access-Control-Allow-Origin': '*'
         }
@@ -48,7 +50,7 @@ async function getQuote(){
           }else{
               quoteText.classList.remove('long-quote');
           }
-          
+
         //stop loading and show quote
           complete()
 
