@@ -25,7 +25,9 @@ async function getQuote(){
    try {
     //    const response = await axios.get(apiUrl);
     //    const data = response.data;
-    const response = await fetch(apiUrl);
+    const response = await fetch(apiUrl, {
+        mode: "no-cors" 
+    });
     const data = await response.json()
           console.log(data);
           if (data.quoteAuthor === ''){
