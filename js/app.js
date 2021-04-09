@@ -22,7 +22,7 @@ async function getQuote(){
 
     let proxy = 'https://cors-anywhere.herokuapp.com/'
 
-    let apiUrl = `${proxy}https://type.fit/api/quotes`
+    let apiUrl = `https://type.fit/api/quotes`
 
    try {
     const response = await fetch(apiUrl);
