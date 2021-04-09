@@ -20,14 +20,14 @@ async function getQuote(){
 
     loading();
 
-    let proxy = `https://cors-anywhere.herokuapp.com/`
+    let proxy = "https://cors-anywhere.herokuapp.com/"
 
-    let apiUrl = "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json"
+    let apiUrl = `${proxy}https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json`
 
    try {
     const response = await fetch(apiUrl, {
         headers: {
-            'Access-Control-Allow-Origin': 'https://stephenchris91.github.io/quote-generator/'
+            'Access-Control-Allow-Origin': '*'
         }
     });
     const data = await response.json()
