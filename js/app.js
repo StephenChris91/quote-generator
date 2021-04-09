@@ -22,7 +22,7 @@ async function getQuote(){
 
     let proxy = 'https://cors-anywhere.herokuapp.com/'
 
-    let apiUrl = `${proxy}https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json`
+    let apiUrl = `${proxy}http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json`
 
    try {
     const response = await fetch(apiUrl);
