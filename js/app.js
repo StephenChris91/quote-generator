@@ -27,7 +27,7 @@ async function getQuote(){
    try {
     const response = await fetch(apiUrl, {
         headers: {
-            'Access-Control-Allow-Origin': '*'
+            'Access-Control-Allow-Origin': 'https://stephenchris91.github.io/quote-generator/'
         }
     });
     const data = await response.json()
